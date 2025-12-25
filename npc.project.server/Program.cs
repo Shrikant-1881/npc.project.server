@@ -1,4 +1,8 @@
+using npc.project.server.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<ServiceService>();
 
 // Add services to the container.
 // Configure Kestrel to listen on both HTTP and HTTPS
