@@ -1,6 +1,8 @@
 using npc.project.server.Services;
+using static npc.project.server.Models.PageEditor;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped< PageEditorService>();
 
 builder.Services.AddScoped<ServiceService>();
 
